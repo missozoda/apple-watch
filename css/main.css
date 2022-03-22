@@ -506,7 +506,7 @@ img {
   font-weight: 600;
   color: #ffffff;
   background-color: #ff000d;
-  border: none;
+  border: 2px solid #ff000d;
   border-radius: 5px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -516,7 +516,6 @@ img {
 .hero__btn:hover {
   color: #ff000d;
   background-color: #ffffff;
-  border: 2px solid #ff000d;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -647,7 +646,7 @@ img {
     text-align: center;
   }
   .info__item {
-    width: 85%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -657,5 +656,111 @@ img {
   .info__link {
     display: block;
     text-align: center;
+  }
+}
+
+.watch__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.watch__content {
+  padding-top: 100px;
+}
+
+.watch__heading {
+  margin: 0;
+  margin-bottom: 70px;
+  padding-right: 50px;
+  font-size: 50px;
+}
+
+.watch__text {
+  padding-right: 30px;
+  padding-left: 30px;
+  font-size: 18px;
+  line-height: 32px;
+  color: grey;
+  border-left: 2px solid grey;
+}
+
+.watch__btn {
+  margin-top: 55px;
+  padding: 13px 20px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #ff000d;
+  border: 2px solid #ff000d;
+  border-radius: 4px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.watch__btn:hover {
+  color: #ff000d;
+  background-color: #ffffff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.watch__img {
+  width: 45%;
+  height: 100%;
+  display: block;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.watch__img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media only screen and (max-width: 700px) {
+  .watch {
+    background-image: url(../../img/preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+  }
+  .watch__heading {
+    margin-bottom: 80px;
+    font-size: 44px;
+    padding-right: 80px;
+    color: #ffffff;
+  }
+  .watch__text {
+    margin-right: 50px;
+    font-weight: 500;
+    color: white;
+    border-left: 2px solid white;
+  }
+  .watch__img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .watch__content {
+    padding-top: 70px;
+  }
+  .watch__heading {
+    padding-right: 40px;
+    font-size: 34px;
+  }
+  .watch__text {
+    padding: 0;
+    font-size: 16px;
+    border-left: none;
   }
 }
